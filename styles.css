@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: IBM Plex Sans;
+    height: 100vh;
+    background-image: url(./joker.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.joke-container{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: rgb(84, 101, 102);
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.headline{
+    text-align: center;
+    justify-content: center;
+    background-color: azure;
+    color: cadetblue;
+    font-size: 20px;
+    width: 240px;
+    padding: 12px 0px 15px;
+}
+
+.joke{
+    
+    background-color: aliceblue;
+    color: cadetblue;
+    width: 240px;
+    min-height: 150px;
+    font-size: 16px;
+    padding: 8px 4px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.next{
+    color:cadetblue;
+    background: linear-gradient(to right, rgb(248, 249, 249), #bad7ea);
+    border: none;
+    border-radius: 38%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.next:active{
+    cursor: pointer;
+    background-color: beige;
+}
+
+
+@media (min-width:1440px) {
+    body{
+        padding-top: 130px;
+        padding-left: 100px;
+        background-size: cover;
+    }
+    
+    .joke-container{
+        gap: 20px;
+        padding-top: 20px;
+        padding-bottom: 14px;
+    }
+    
+    .headline{
+        font-size: 24px;
+        width: 540px;
+    }
+    
+    .joke{
+        width: 540px;
+        min-height: 170px;
+        font-size: 24px;
+        padding: 12px 8px;
+    }
+    
+    .next{
+        width: 85px;
+        height: 55px;
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    .next:hover{
+        cursor: pointer;
+    }
+    
+    .next:active{
+        cursor: pointer;
+        background-color: beige;
+    } 
+}
